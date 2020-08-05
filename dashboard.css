@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background-color: lightgray;;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+header {
+    background-color: white;
+    height: 30px;
+}
+
+header h1 {
+    margin: 0 10px 10px;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto;
+}
+
+.ehr {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    background-color: gray;
+    text-align: center;
+}
+
+.weekly {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    text-align: center;
+}
+
+.ytd {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    background-color: darkgray;
+    text-align: center;
+}
+
+.shift-form {
+    grid-column: 1 / span 3;
+    grid-row: 2 / 2;
+    justify-self: center;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+
+.shift-form form {
+    display: inline-grid;
+    padding: 10px;
+    margin: 10px;
+    line-height: 10px;
+}
+
+.shift-form input[type="text"] {
+    margin: 15px;
+}
+
+.shift-form select {
+    margin: 15px;
+}
